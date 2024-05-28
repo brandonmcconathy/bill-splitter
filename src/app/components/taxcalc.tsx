@@ -1,5 +1,7 @@
 export default function TaxCalc() {
   return(
-    <h1>Tax Calculator</h1>
+    <section>
+      <h1>Tax Calculator</h1>
+    </section>
   )
 }

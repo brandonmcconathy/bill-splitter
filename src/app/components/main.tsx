@@ -1,5 +1,23 @@
 export default function Main() {
+
+  let share = 0
+
   return(
-    <h1>Main</h1>
+    <section>
+      <h1>Main</h1>
+      <div>
+        <label>Your Item Cost</label>
+        <input />
+      </div>
+      <div>
+        <label>Tax (%)</label>
+        <input />
+      </div>
+      <div>
+        <label>Tip (%)</label>
+        <input />
+      </div>
+      <h2>You owe: {share}</h2>
+    </section>
   )
 }
