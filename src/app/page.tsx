@@ -1,5 +1,13 @@
+import Main from "./components/main"
+import TaxCalc from "./components/taxcalc"
+import TipCalc from "./components/tipcalc"
+
 export default function Home() {
   return (
-    <h1>Homepage</h1>
+    <main>
+      <Main />
+      <TaxCalc />
+      <TipCalc />
+    </main>
   )
 }
