@@ -4,7 +4,7 @@ export default function Main() {
 
   return(
     <section>
-      <h1>Main</h1>
+      <h1>Bill Splitter</h1>
       <div>
         <label>Your Item Cost</label>
         <input />
