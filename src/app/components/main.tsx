@@ -4,7 +4,6 @@ import { useState } from "react"
 
 export default function Main() {
 
-  const [share, setShare] = useState(0)
   const [input, setInput] = useState({cost: 0, tax: 0, tip: 0})
 
   const handleChange = (event:any) => {
@@ -27,7 +26,7 @@ export default function Main() {
         <label>Tip (%)</label>
         <input type="number" id='tip' name='tip' value={input.tip} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
-      <h2>You owe: {share}</h2>
+      <h2>You owe: {Math.round(((input.cost * (input.tax / 100)) + (input.cost * (input.tip / 100)) + input.cost) * 100) / 100}</h2>
     </section>
   )
 }
