@@ -22,7 +22,7 @@ export default function TipCalc() {
         <label>Tip Amount</label>
         <input type="number" id='tip' name='tip' value={input.tip} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
-      <h1>Tip is {input.tip / input.subtotal}%</h1>
+      <h1>Tip is {Math.round((input.tip / input.subtotal) * 10000) / 100}%</h1>
     </section>
   )
 }

@@ -26,7 +26,7 @@ export default function Main() {
         <label>Tip (%)</label>
         <input type="number" id='tip' name='tip' value={input.tip} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
-      <h2>You owe: {Math.round((Number(input.cost) * ((input.tax / 100) + (input.tip / 100) + 1)) * 100) / 100}</h2>
+      <h2>You owe: ${Math.round((Number(input.cost) * ((input.tax / 100) + (input.tip / 100) + 1)) * 100) / 100}</h2>
     </section>
   )
 }

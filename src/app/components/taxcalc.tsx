@@ -22,7 +22,7 @@ export default function TaxCalc() {
         <label>Tax Amount ($)</label>
         <input type="number" id='tax' name='tax' value={input.tax} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
-      <h1>Tax is {input.tax / input.subtotal}%</h1>
+      <h1>Tax is {Math.round((input.tax / input.subtotal) * 10000) / 100}%</h1>
     </section>
   )
 }
