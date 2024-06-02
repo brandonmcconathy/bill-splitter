@@ -4,7 +4,12 @@ import { useState } from "react"
 
 export default function TipCalc() {
 
-  let tip = 0
+  const [input, setInput] = useState({subtotal: 0, tip: 0})
+
+  const handleChange = (event:any) => {
+    const { name, value } = event.target
+    setInput((prevInput) => ({ ...prevInput, [name]: value}))
+  }
 
   return(
     <section>
@@ -15,9 +20,9 @@ export default function TipCalc() {
       </div>
       <div>
         <label>Tip Amount</label>
-        <input type="number" id='subtotal' name='subtotal' value={input.subtotal} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
+        <input type="number" id='tip' name='tip' value={input.tip} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
-      <h1>Tip is {tip}%</h1>
+      <h1>Tip is {input.tip / input.subtotal}%</h1>
     </section>
   )
 }
