@@ -12,7 +12,7 @@ export default function Main() {
   }
 
   return(
-    <section className="">
+    <section className="bg-amber-200 flex flex-col justify-center items-center my-12 gap-4">
       <h1>Bill Splitter</h1>
       <div>
         <label>Your Item Cost</label>
