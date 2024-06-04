@@ -12,10 +12,10 @@ export default function Main() {
   }
 
   return(
-    <section className="bg-amber-200 flex flex-col justify-center items-center my-12 gap-4">
-      <h1>Bill Splitter</h1>
+    <section className="bg-amber-200 flex flex-col justify-center items-center my-12 py-4 mx-auto gap-4 rounded-xl box-pop w-1/2">
+      <h1 className="text-2xl font-semibold">Bill Splitter</h1>
       <div>
-        <label>Your Item Cost</label>
+        <label>Your Item Cost ($)</label>
         <input type="number" id='cost' name='cost' value={input.cost} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300" />
       </div>
       <div>
