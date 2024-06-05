@@ -12,7 +12,7 @@ export default function TaxCalc() {
   }
 
   return(
-    <section>
+    <section className="bg-amber-200 flex flex-col justify-center items-center my-12 py-4 mx-auto gap-4 font-semibold rounded-xl box-pop w-1/2">
       <h1>Tax Calculator</h1>
       <div>
         <label>Subtotal ($)</label>
