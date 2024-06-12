@@ -16,11 +16,11 @@ export default function TaxCalc() {
       <h1 className="text-2xl font-bold">Tax Calculator</h1>
       <div className="flex gap-4 items-center justify-center">
         <label htmlFor="subtotal">Subtotal ($):</label>
-        <input type="number" id='subtotal' name='subtotal' value={input.subtotal} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300 w-1/4" />
+        <input type="number" id='subtotal' name='subtotal' value={input.subtotal} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300 w-32" />
       </div>
       <div className="flex gap-4 items-center justify-center">
         <label htmlFor="tax">Tax Amount ($):</label>
-        <input type="number" id='tax' name='tax' value={input.tax} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300 w-1/4" />
+        <input type="number" id='tax' name='tax' value={input.tax} onChange={handleChange} required className="text-black outline-none rounded-xl px-4 py-2 shadow-xl focus:ring focus:ring-gray-300 transition duration-300 w-32" />
       </div>
       <h1 className="text-lg">Tax is {Math.round((input.tax / input.subtotal) * 10000) / 100}%</h1>
     </section>
