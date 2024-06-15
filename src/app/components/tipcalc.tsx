@@ -12,7 +12,7 @@ export default function TipCalc() {
   }
 
   return(
-    <section className="bg-amber-200 flex flex-col justify-center items-center my-20 py-4 mx-auto gap-4 font-semibold rounded-xl box-pop w-1/2">
+    <section className="bg-amber-200 flex flex-col justify-center items-center my-20 py-4 mx-auto gap-4 font-semibold rounded-xl box-pop w-97 sm:w-5/6 md:w-3/4 lg:w-7/12 xl:w-1/2">
       <h1 className="text-2xl font-bold">Tip Calculator</h1>
       <div className="flex gap-4 items-center justify-center">
         <label htmlFor="subtotal">Subtotal Before Tax ($):</label>
