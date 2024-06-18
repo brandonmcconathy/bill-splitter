@@ -7,7 +7,10 @@ export default function Main() {
   const [input, setInput] = useState({cost: 0, tax: 0, tip: 0})
 
   const handleChange = (event:any) => {
-    const { name, value } = event.target
+    let { name, value } = event.target
+    if (value < 0) {
+      value = 0
+    }
     setInput((prevInput) => ({ ...prevInput, [name]: value}))
   }
 
